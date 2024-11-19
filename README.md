@@ -76,7 +76,7 @@ module "web_server" {
   hostname = "development.website"
   plan = "DEV-1xCPU-4GB"
   
-  login {
+  login = {
     send_password = "none"
     keys = [
       "pubkey-xxx",
