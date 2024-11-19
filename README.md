@@ -21,7 +21,7 @@ provider "upcloud" {
   password = var.upcloud_password
 }
 
-module "private_network" {
+module "web_server" {
   source  = "lukibsubekti/web-server/upcloud"
   version = "1.0.0"
 
@@ -34,7 +34,7 @@ module "private_network" {
 ### Configure OS and user data
 
 ```hcl
-module "private_network" {
+module "web_server" {
   source  = "lukibsubekti/web-server/upcloud"
   version = "1.0.0"
 
@@ -50,7 +50,7 @@ module "private_network" {
 ### Attach to private network
 
 ```hcl
-module "private_network" {
+module "web_server" {
   source  = "lukibsubekti/web-server/upcloud"
   version = "1.0.0"
 
@@ -68,7 +68,7 @@ module "private_network" {
 ### Login using SSH keys
 
 ```hcl
-module "private_network" {
+module "web_server" {
   source  = "lukibsubekti/web-server/upcloud"
   version = "1.0.0"
 
