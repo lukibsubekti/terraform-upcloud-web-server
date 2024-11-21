@@ -1,11 +1,11 @@
 output "server_id" {
   description = "Server ID"
-  value = upcloud_server.main.id
+  value       = upcloud_server.main.id
 }
 
 output "timezone" {
   description = "Server timezone"
-  value = upcloud_server.main.timezone
+  value       = upcloud_server.main.timezone
 }
 
 output "networks" {
