@@ -24,7 +24,77 @@ locals {
     "64xCPU-384GB" = 2048
     "80xCPU-512GB" = 2048
 
-    "HIMEM-2xCPU-8GB"    = 100
+    "1xCPU-1GB"                     =     1024  
+    "1xCPU-2GB"                     =     2048  
+    "2xCPU-2GB"                     =     2048  
+    "2xCPU-4GB"                     =     4096  
+    "4xCPU-8GB"                     =     8192  
+    "6xCPU-16GB"                    =    16384  
+    "8xCPU-32GB"                    =    32768  
+    "12xCPU-48GB"                   =    49152  
+    "16xCPU-64GB"                   =    65536  
+    "24xCPU-96GB"                   =    98304  
+    "32xCPU-128GB"                  =   131072  
+    "38xCPU-192GB"                  =   196608  
+    "48xCPU-256GB"                  =   262144  
+    "64xCPU-384GB"                  =   393216  
+    "80xCPU-512GB"                  =   524288  
+
+    "CLOUDNATIVE-1xCPU-4GB"         =     4096  
+    "CLOUDNATIVE-1xCPU-8GB"         =     8192  
+    "CLOUDNATIVE-2xCPU-4GB"         =     4096  
+    "CLOUDNATIVE-2xCPU-8GB"         =     8192  
+    "CLOUDNATIVE-2xCPU-16GB"        =    16384  
+    "CLOUDNATIVE-4xCPU-8GB"         =     8192  
+    "CLOUDNATIVE-4xCPU-16GB"        =    16384  
+    "CLOUDNATIVE-4xCPU-24GB"        =    24576  
+    "CLOUDNATIVE-4xCPU-32GB"        =    32768  
+    "CLOUDNATIVE-4xCPU-48GB"        =    49152  
+    "CLOUDNATIVE-6xCPU-16GB"        =    16384  
+    "CLOUDNATIVE-6xCPU-24GB"        =    24576  
+    "CLOUDNATIVE-8xCPU-16GB"        =    16384  
+    "CLOUDNATIVE-8xCPU-24GB"        =    24576  
+    "CLOUDNATIVE-8xCPU-32GB"        =    32768  
+    "CLOUDNATIVE-8xCPU-48GB"        =    49152  
+    "CLOUDNATIVE-8xCPU-64GB"        =    65536  
+    "CLOUDNATIVE-8xCPU-96GB"        =    98304  
+    "CLOUDNATIVE-8xCPU-128GB"       =   131072  
+    "CLOUDNATIVE-12xCPU-24GB"       =    24576  
+    "CLOUDNATIVE-12xCPU-32GB"       =    32768  
+    "CLOUDNATIVE-16xCPU-32GB"       =    32768  
+    "CLOUDNATIVE-16xCPU-48GB"       =    49152  
+    "CLOUDNATIVE-16xCPU-64GB"       =    65536  
+    "CLOUDNATIVE-16xCPU-96GB"       =    98304  
+    "CLOUDNATIVE-16xCPU-128GB"      =   131072  
+    "CLOUDNATIVE-16xCPU-192GB"      =   196608  
+    "CLOUDNATIVE-20xCPU-64GB"       =    65536  
+    "CLOUDNATIVE-20xCPU-96GB"       =    98304  
+    "CLOUDNATIVE-24xCPU-256GB"      =   262144  
+    "CLOUDNATIVE-32xCPU-64GB"       =    65536  
+    "CLOUDNATIVE-32xCPU-128GB"      =   131072  
+    "CLOUDNATIVE-32xCPU-192GB"      =   196608  
+    "CLOUDNATIVE-32xCPU-256GB"      =   262144  
+    "CLOUDNATIVE-32xCPU-384GB"      =   393216  
+    "CLOUDNATIVE-48xCPU-384GB"      =   393216  
+    "CLOUDNATIVE-48xCPU-512GB"      =   524288  
+    "CLOUDNATIVE-64xCPU-192GB"      =   196608  
+    "CLOUDNATIVE-64xCPU-256GB"      =   262144  
+    "CLOUDNATIVE-64xCPU-384GB"      =   393216  
+    "CLOUDNATIVE-64xCPU-512GB"      =   524288  
+    "CLOUDNATIVE-80xCPU-512GB"      =   524288  
+    
+    "GPU-8xCPU-64GB-1xL40S"         =    65536  
+    "GPU-12xCPU-128GB-1xL40S"       =   131072  
+    "GPU-12xCPU-128GB-2xL40S"       =   131072  
+    "GPU-16xCPU-192GB-1xL40S"       =   196608  
+    "GPU-16xCPU-192GB-2xL40S"       =   196608  
+    "GPU-16xCPU-192GB-3xL40S"       =   196608  
+    "GPU-20xCPU-256GB-1xL40S"       =   262144  
+    "GPU-20xCPU-256GB-2xL40S"       =   262144  
+    "GPU-20xCPU-256GB-3xL40S"       =   262144  
+    "GPU-32xCPU-384GB-2xL40S"       =   393216  
+    "GPU-32xCPU-384GB-3xL40S"       =   393216  
+
     "HIMEM-2xCPU-16GB"   = 100
     "HIMEM-4xCPU-32GB"   = 100
     "HIMEM-4xCPU-64GB"   = 200
@@ -51,6 +121,7 @@ locals {
   }
 
   user_data_templates = [
-    "ubuntu_docker"
+    "ubuntu_docker",
+    "ubuntu_nginx"
   ]
 }
